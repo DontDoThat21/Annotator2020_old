@@ -27,7 +27,9 @@ namespace Annotator2020
 
         private void lblShowplansAndAbstracts_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-
+            formShowPlansShowAbstracts frm = new formShowPlansShowAbstracts();
+            frm.Show();
+            this.Close();
         }
     }
 }

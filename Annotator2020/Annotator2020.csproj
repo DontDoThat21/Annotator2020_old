@@ -6,4 +6,20 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Pictures\email.png" />
+    <None Remove="Pictures\gpjHeader.jpg" />
+    <None Remove="Pictures\lock.png" />
+    <None Remove="Pictures\options.png" />
+    <None Remove="Pictures\report.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Pictures\email.png" />
+    <Resource Include="Pictures\gpjHeader.jpg" />
+    <Resource Include="Pictures\lock.png" />
+    <Resource Include="Pictures\options.png" />
+    <Resource Include="Pictures\report.png" />
+  </ItemGroup>
+
 </Project>

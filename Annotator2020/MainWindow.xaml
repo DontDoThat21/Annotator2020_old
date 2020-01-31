@@ -5,23 +5,45 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Annotator2020"
         mc:Ignorable="d"
-        Title="GPJ Annotator 2020" Height="336" Width="746" MinWidth="800" MinHeight="500">
+        Title="GPJ Annotator 2020" Height="674" Width="1158" MinWidth="800" MinHeight="500">
     <Grid>
-        <Rectangle Margin="10,98,10,10" Stroke="Black"/>
-        <Rectangle Margin="10,0,0,10" Stroke="Black" HorizontalAlignment="Left" Width="369" Height="59" VerticalAlignment="Bottom"/>
+        <Rectangle Margin="10,104,10,10" Stroke="Black"/>
+        <Rectangle Margin="238,0,238,47" Stroke="Black" Height="74" VerticalAlignment="Bottom"/>
         <Rectangle Stroke="Black" Margin="238,132,238,132"/>
-        <Rectangle Name="rctNavBarTop" StrokeThickness="0"  Fill="ForestGreen" Height="31" Stroke="Black" VerticalAlignment="Top"/>
-        <Rectangle Name="rctNavBarTitle" Fill="Gray" StrokeThickness="0" Height="31" Stroke="Black" VerticalAlignment="Top" Margin="0,31,0,0"/>
-        <Label x:Name="lblShowplansAndAbstracts" Content="Showplans And Show Abstracts" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="0,132,0,276" MouseLeftButtonDown="lblShowplansAndAbstracts_MouseLeftButtonDown" HorizontalAlignment="Center" Width="324"/>
-        <Label x:Name="lblEngDrawings" Content="Space Plan Viewing" Margin="0,284,0,132" HorizontalContentAlignment="Center" HorizontalAlignment="Center" VerticalContentAlignment="Center" Width="324"/>
-        <Label x:Name="lblSpacePlanViewing" Content="Space Plan Viewing" Margin="0,208,0,200" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Center" Width="324"/>
-        <Button x:Name="btnAnnoOptions" Content="Options..." HorizontalAlignment="Left" Margin="10,0,0,10" Width="52" Height="59" VerticalAlignment="Bottom"/>
-        <Button x:Name="btnAnnoEmailTeamMtn" Content="Email Team Maintenance" HorizontalAlignment="Left" Margin="67,0,0,10" Width="52" Height="59" VerticalAlignment="Bottom"/>
-        <Button x:Name="btnAnnoUsageReports" Content="Annotator Usage Reports" HorizontalAlignment="Left" Margin="124,0,0,10" Width="52" Height="59" VerticalAlignment="Bottom"/>
-        <Button x:Name="btnAnnoSecUI" HorizontalAlignment="Left" Margin="181,0,0,10" Width="52" Height="59" VerticalAlignment="Bottom">
-            <StackPanel>
-                <Image Source=""
-            </StackPanel>
-        </Button>
+        <Rectangle Name="rctNavBarTop" StrokeThickness="0"  Fill="ForestGreen" Height="40" Stroke="Black" VerticalAlignment="Top"/>
+        <Rectangle Name="rctNavBarTitle" Fill="Gray" StrokeThickness="0" Stroke="Black" Margin="0,48,0,0" Height="31" VerticalAlignment="Top"/>
+
+        <StackPanel Margin="238,0,239,26" Orientation="Horizontal" Height="95" VerticalAlignment="Bottom" >
+            <Button x:Name="btnAnnoOptions" Width="52" Height="74" Margin="0, 0, 10, 22">
+                <StackPanel>
+                    <Image Source="Pictures/options.png" Height="30" />
+                    <TextBlock Height="33" FontSize="11" HorizontalAlignment="Center" Width="50"><Run Text="Options..."/><LineBreak/></TextBlock>
+                </StackPanel>
+            </Button>
+            <Button x:Name="btnAnnoSecUI" Width="52" Height="74" Margin="0, 0, 10, 22">
+                <StackPanel HorizontalAlignment="Center">
+                    <Image Source="Pictures/lock.png" Height="30" />
+                    <TextBlock Height="33" FontSize="11" HorizontalAlignment="Center" Width="50"><Run Text="Annotator"/><LineBreak/><Run Text="Security"/></TextBlock>
+                </StackPanel>
+            </Button>
+            <Button x:Name="btnAnnoUsageReports" Width="52" Height="74" Margin="0, 0, 10, 22">
+                <StackPanel HorizontalAlignment="Center">
+                    <Image Source="Pictures/report.png" Height="30" />
+                    <TextBlock Height="33" FontSize="11" HorizontalAlignment="Center" Width="50"><Run Text="Usage"/><LineBreak/><Run Text="Reports"/></TextBlock>
+                </StackPanel>
+            </Button>
+            <Button x:Name="btnAnnoEmailTeamMtn" Width="52" Height="74" Margin="0, 0, 0, 22">
+                <StackPanel HorizontalAlignment="Center">
+                    <Image Source="Pictures/email.png" Height="30" />
+                    <TextBlock Height="33" FontSize="11" HorizontalAlignment="Center" Width="50"><Run Text="Email"/><LineBreak/><Run Text="Team Edit"/></TextBlock>
+                </StackPanel>
+            </Button>
+        </StackPanel>
+        <Label x:Name="lblAnnotatorGPJ" Foreground="GhostWhite" Content="George P. Johnson Annotator" HorizontalAlignment="Left" HorizontalContentAlignment="Left" Margin="0,48,0,0" VerticalAlignment="Top" Height="31" Width="275"/>
+        <Image x:Name="imgGPJHeader" Source="Pictures/gpjHeader.jpg" VerticalAlignment="Top" />
+        <Label x:Name="lblSpacePlanViewing" Foreground="GhostWhite" Background="Gray" Content="Space Plan Viewing" Margin="0,288,0,295" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Center" Width="324"/>
+        <Label x:Name="lblEngDrawings" Content="Engineering Drawings" Margin="0,416,0,167" HorizontalContentAlignment="Center" HorizontalAlignment="Center" VerticalContentAlignment="Center" Width="324" GotMouseCapture="lblEngDrawings_GotMouseCapture"/>
+        <Label x:Name="lblShowplansAndAbstracts" Foreground="GhostWhite" Background="Gray" Content="Showplans And Show Abstracts" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="0,168,0,415" MouseLeftButtonDown="lblShowplansAndAbstracts_MouseLeftButtonDown" HorizontalAlignment="Center" Width="324"/>
+
     </Grid>
 </Window>
