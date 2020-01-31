@@ -1,0 +1,27 @@
+﻿<Window x:Class="Annotator2020.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Annotator2020"
+        mc:Ignorable="d"
+        Title="GPJ Annotator 2020" Height="336" Width="746" MinWidth="800" MinHeight="500">
+    <Grid>
+        <Rectangle Margin="10,98,10,10" Stroke="Black"/>
+        <Rectangle Margin="10,0,0,10" Stroke="Black" HorizontalAlignment="Left" Width="369" Height="59" VerticalAlignment="Bottom"/>
+        <Rectangle Stroke="Black" Margin="238,132,238,132"/>
+        <Rectangle Name="rctNavBarTop" StrokeThickness="0"  Fill="ForestGreen" Height="31" Stroke="Black" VerticalAlignment="Top"/>
+        <Rectangle Name="rctNavBarTitle" Fill="Gray" StrokeThickness="0" Height="31" Stroke="Black" VerticalAlignment="Top" Margin="0,31,0,0"/>
+        <Label x:Name="lblShowplansAndAbstracts" Content="Showplans And Show Abstracts" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="0,132,0,276" MouseLeftButtonDown="lblShowplansAndAbstracts_MouseLeftButtonDown" HorizontalAlignment="Center" Width="324"/>
+        <Label x:Name="lblEngDrawings" Content="Space Plan Viewing" Margin="0,284,0,132" HorizontalContentAlignment="Center" HorizontalAlignment="Center" VerticalContentAlignment="Center" Width="324"/>
+        <Label x:Name="lblSpacePlanViewing" Content="Space Plan Viewing" Margin="0,208,0,200" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Center" Width="324"/>
+        <Button x:Name="btnAnnoOptions" Content="Options..." HorizontalAlignment="Left" Margin="10,0,0,10" Width="52" Height="59" VerticalAlignment="Bottom"/>
+        <Button x:Name="btnAnnoEmailTeamMtn" Content="Email Team Maintenance" HorizontalAlignment="Left" Margin="67,0,0,10" Width="52" Height="59" VerticalAlignment="Bottom"/>
+        <Button x:Name="btnAnnoUsageReports" Content="Annotator Usage Reports" HorizontalAlignment="Left" Margin="124,0,0,10" Width="52" Height="59" VerticalAlignment="Bottom"/>
+        <Button x:Name="btnAnnoSecUI" HorizontalAlignment="Left" Margin="181,0,0,10" Width="52" Height="59" VerticalAlignment="Bottom">
+            <StackPanel>
+                <Image Source=""
+            </StackPanel>
+        </Button>
+    </Grid>
+</Window>
