@@ -42,7 +42,7 @@
         <Label x:Name="lblAnnotatorGPJ" Foreground="GhostWhite" Content="George P. Johnson Annotator" HorizontalAlignment="Left" HorizontalContentAlignment="Left" Margin="0,48,0,0" VerticalAlignment="Top" Height="31" Width="275"/>
         <Image x:Name="imgGPJHeader" Source="Pictures/gpjHeader.jpg" VerticalAlignment="Top" />
         <Label x:Name="lblSpacePlanViewing" Foreground="GhostWhite" Background="Gray" Content="Space Plan Viewing" Margin="0,288,0,295" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Center" Width="324"/>
-        <Label x:Name="lblEngDrawings" Content="Engineering Drawings" Margin="0,416,0,167" HorizontalContentAlignment="Center" HorizontalAlignment="Center" VerticalContentAlignment="Center" Width="324" GotMouseCapture="lblEngDrawings_GotMouseCapture"/>
+        <Label x:Name="lblEngDrawings" Foreground="GhostWhite" Background="Gray" Content="Engineering Drawings" Margin="0,416,0,167" HorizontalContentAlignment="Center" HorizontalAlignment="Center" VerticalContentAlignment="Center" Width="324" GotMouseCapture="lblEngDrawings_GotMouseCapture"/>
         <Label x:Name="lblShowplansAndAbstracts" Foreground="GhostWhite" Background="Gray" Content="Showplans And Show Abstracts" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="0,168,0,415" MouseLeftButtonDown="lblShowplansAndAbstracts_MouseLeftButtonDown" HorizontalAlignment="Center" Width="324"/>
 
     </Grid>
