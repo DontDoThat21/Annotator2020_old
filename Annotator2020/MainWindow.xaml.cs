@@ -31,5 +31,12 @@ namespace Annotator2020
             frm.Show();
             this.Close();
         }
+
+        private void lblSpacePlanViewing_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            formSpacePlanViewing frm = new formSpacePlanViewing();
+            frm.Show();
+            this.Close();
+        }
     }
 }

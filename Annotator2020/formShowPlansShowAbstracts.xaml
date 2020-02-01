@@ -16,7 +16,7 @@
         <Label x:Name="lblRdySelection" Content="...Ready for your selection..." FontStyle="Italic" Foreground="GhostWhite" HorizontalAlignment="Left" Margin="44,7,0,0" VerticalAlignment="Top" Width="193"/>
         <Image x:Name="image" Source="Pictures/missingtexture.jpeg" HorizontalAlignment="Left" Height="38" VerticalAlignment="Top" Width="54" Margin="1,1,0,0"/>
         <Rectangle Fill="LightGray" Margin="0,40,0,0" Stroke="Black" Grid.ColumnSpan="3"/>
-        <Button x:Name="btnClose" Content="Close" Foreground="GhostWhite" BorderBrush="Gray" Background="Gray" Margin="0,1,4,0" VerticalAlignment="Top" Height="38" Click="btnClose_Click" HorizontalAlignment="Right" Width="85" Grid.Column="2"/>
+        <Button x:Name="btnClose" Content="Close" Foreground="GhostWhite" BorderBrush="Gray" Background="Gray" Margin="0,1,1,0" VerticalAlignment="Top" Height="38" Click="btnClose_Click" HorizontalAlignment="Right" Width="88" Grid.Column="2"/>
         <Rectangle HorizontalAlignment="Left" Margin="10,45,0,26" Stroke="Black" Width="228"/>
         <Rectangle HorizontalAlignment="Left" Height="57" Margin="10,45,0,0" Stroke="Black" VerticalAlignment="Top" Width="228"/>
         <ComboBox x:Name="cboSHYR" HorizontalAlignment="Left" Margin="18,76,0,0" VerticalAlignment="Top" Width="64" Height="16"/>
