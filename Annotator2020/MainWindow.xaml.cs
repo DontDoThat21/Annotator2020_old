@@ -38,5 +38,12 @@ namespace Annotator2020
             frm.Show();
             this.Close();
         }
+
+        private void lblEngDrawings_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            formEngineeringDrawings frm = new formEngineeringDrawings();
+            frm.Show();
+            this.Close();
+        }
     }
 }

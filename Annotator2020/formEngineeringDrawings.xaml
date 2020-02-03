@@ -1,0 +1,65 @@
+﻿<Window x:Class="Annotator2020.formEngineeringDrawings"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Annotator2020"
+        mc:Ignorable="d"
+        Title="Engineering Drawings" Height="450" Width="800" Closing="Window_Closing">
+    <Grid>
+        <Grid>
+
+        </Grid>
+        <Rectangle Name="rctNavBarTitle" Fill="Gray" StrokeThickness="0" Stroke="Black" Height="31" VerticalAlignment="Top"/>
+        <Button x:Name="btnClose" Content="Close" Foreground="GhostWhite" BorderBrush="Gray" Background="Gray" VerticalAlignment="Top" Height="31" Click="btnClose_Click" HorizontalAlignment="Right" Width="84"/>
+        <Label x:Name="lblRdySelection" Content="The Construction Drawing Viewer is waiting for your selection..." FontStyle="Italic" Foreground="GhostWhite" HorizontalAlignment="Left" Margin="50,3,0,0" VerticalAlignment="Top" Width="477" RenderTransformOrigin="0.518,-0.384"/>
+
+        <TabControl x:Name="tabControl" Margin="0,31,0,0">
+            <TabItem Header="Drawing of Show Props" Width="160">
+                <Grid Background="#FFE5E5E5">
+                    <Rectangle HorizontalAlignment="Left" Margin="10,10,0,10" Stroke="Black" Width="411" Grid.RowSpan="2"/>
+                    <Rectangle HorizontalAlignment="Left" Height="92" Margin="10,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="411" Grid.RowSpan="2"/>
+                    <ComboBox x:Name="cboxDwgPropsSHYR" HorizontalAlignment="Left" Margin="18,37,0,0" VerticalAlignment="Top" Width="64" Height="16"/>
+                    <Label x:Name="lblDwgPropsShowYear" Content="Show Year:" HorizontalAlignment="Left" Margin="14,15,0,0" VerticalAlignment="Top"/>
+                    <ComboBox x:Name="cboxDwgPropsClient" Margin="94,37,0,0" VerticalAlignment="Top" Height="16" HorizontalAlignment="Left" Width="318"/>
+                    <Label x:Name="lblDwgPropsClient" Content="Client:" HorizontalAlignment="Left" Margin="89,14,0,0" VerticalAlignment="Top" Height="28"/>
+                    <ComboBox x:Name="cboxDwgPropsShow" Margin="18,71,0,0" VerticalAlignment="Top" Height="16" HorizontalAlignment="Left" Width="394" Grid.RowSpan="2"/>
+                    <Label x:Name="lblDwgPropsShowShow" Content="Show:" HorizontalAlignment="Left" Margin="14,51,0,0" VerticalAlignment="Top" Height="28"/>
+                    <DataGrid x:Name="dataEngDwgGrid" Margin="11,107,0,11" HorizontalAlignment="Left" Width="409"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Inventoried Drawings" Width="160">
+                <Grid Background="#FFE5E5E5">
+                    <Rectangle HorizontalAlignment="Left" Margin="10,10,0,10" Stroke="Black" Width="228"/>
+                    <Rectangle HorizontalAlignment="Left" Height="50" Margin="10,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="228"/>
+                    <ComboBox x:Name="cboxInvClient" Margin="21,39,0,0" VerticalAlignment="Top" Height="16" HorizontalAlignment="Left" Width="206"/>
+                    <Label x:Name="lblShowYear_Copy" Content="Client:" HorizontalAlignment="Left" Margin="16,16,0,0" VerticalAlignment="Top" Height="28"/>
+                    <DataGrid x:Name="dataGrid" Margin="11,65,0,11" HorizontalAlignment="Left" Width="226"/>
+
+                </Grid>
+            </TabItem>
+            <TabItem Header="Engineering Projects" Width="160">
+                <Grid Background="#FFE5E5E5">
+                    <Rectangle HorizontalAlignment="Left" Margin="10,10,0,10" Stroke="Black" Width="323"/>
+                    <Rectangle HorizontalAlignment="Left" Height="49" Margin="10,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="323"/>
+                    <ComboBox x:Name="comboBox_Copy" Margin="26,85,0,0" VerticalAlignment="Top" Height="16" HorizontalAlignment="Left" Width="290"/>
+                    <Label x:Name="lblShowYearC1" Content="Client:" HorizontalAlignment="Left" Margin="22,61,0,0" VerticalAlignment="Top" Height="28"/>
+                    <Button x:Name="button" Content="Go!" HorizontalAlignment="Left" Margin="304,24,0,0" VerticalAlignment="Top" Height="21" Width="24"/>
+                    <TextBox x:Name="tboxEngProj" HorizontalAlignment="Left" Margin="164,24,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="134" Height="21"/>
+                    <Label x:Name="label" Content="Project Number Search:" HorizontalAlignment="Left" Margin="20,22,0,0" VerticalAlignment="Top" Width="166"/>
+                    <DataGrid x:Name="engProjDataGrid" Margin="11,106,0,11" HorizontalAlignment="Left" Width="321"/>
+
+                </Grid>
+            </TabItem>
+            <TabItem Header="Collaboration Projects" Width="160">
+                <Grid Background="#FFE5E5E5">
+                    <Rectangle HorizontalAlignment="Left" Margin="10,10,0,10" Stroke="Black" Width="228"/>
+                    <Rectangle HorizontalAlignment="Left" Height="46" Margin="10,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="228"/>
+                    <ComboBox x:Name="cboCollabClient" HorizontalAlignment="Left" Margin="17,33,0,0" VerticalAlignment="Top" Width="215" Height="16"/>
+                    <Label x:Name="lblCollabClient" Content="Client:" HorizontalAlignment="Left" Margin="12,12,0,0" VerticalAlignment="Top"/>
+                    <DataGrid x:Name="gridCollab" Margin="11,54,0,11" HorizontalAlignment="Left" Width="226"/>
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
