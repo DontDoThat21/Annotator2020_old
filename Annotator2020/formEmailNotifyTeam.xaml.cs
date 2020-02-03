@@ -40,6 +40,7 @@ namespace Annotator2020
                 lblSelectShowOrProject.Visibility = Visibility.Visible;
                 cboSelectShowOrProject.Visibility = Visibility.Visible;
             }
+            // Test comment.
         }
 
         private void imageFilter_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
