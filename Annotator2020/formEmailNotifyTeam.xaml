@@ -1,0 +1,26 @@
+﻿<Window x:Class="Annotator2020.formEmailNotifyTeam"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Annotator2020"
+        mc:Ignorable="d"
+        Title="Email Notification Team Administration" Height="450" Width="800" Closing="Window_Closing">
+    <Grid>
+        <Rectangle HorizontalAlignment="Left" Height="112" Margin="10,14,0,0" Stroke="Black" VerticalAlignment="Top" Width="390"/>
+        <RadioButton x:Name="rdioClientBased" Content="Client-based (Typ)" HorizontalAlignment="Left" Margin="14,28,0,0" VerticalAlignment="Top" Checked="radioChecked" />
+        <RadioButton x:Name="rdioClientShowBased" Content="Client/Show-based" HorizontalAlignment="Left" Margin="154,28,0,0" VerticalAlignment="Top" Checked="radioChecked"/>
+        <RadioButton x:Name="rdioProjectBased" Content="Project-Based" HorizontalAlignment="Left" Margin="300,28,0,0" VerticalAlignment="Top" Checked="radioChecked"/>
+        <Label x:Name="lblEmailTeamType" Background="White" Content="Team Type" HorizontalAlignment="Left" Margin="22,0,0,0" VerticalAlignment="Top" VerticalContentAlignment="Top" Height="28" Width="70"/>
+        <Label x:Name="lblSelectClient" Content="Select Client:" HorizontalAlignment="Left" Margin="15,48,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblSelectShowOrProject" Content="Select Show:" HorizontalAlignment="Left" Margin="16,83,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="cboSelectClient" HorizontalAlignment="Left" Margin="107,50,0,0" VerticalAlignment="Top" Width="285"/>
+        <ComboBox x:Name="cboSelectShowOrProject" HorizontalAlignment="Left" Margin="107,85,0,0" VerticalAlignment="Top" Width="285"/>
+        <Image x:Name="imageDwg" Source="Pictures/missingtexture.jpeg" HorizontalAlignment="Left" Height="21" VerticalAlignment="Top" Width="20" Margin="405,14,0,0" MouseLeftButtonDown="imageFilter_MouseLeftButtonDown"/>
+        <Rectangle HorizontalAlignment="Center" Height="284" Margin="0,140,0,0" Stroke="Black" VerticalAlignment="Top" Width="780"/>
+        <Label x:Name="lblTeamMembers" Background="White" Content="Team Members" HorizontalAlignment="Left" Margin="22,126,0,0" VerticalAlignment="Top" VerticalContentAlignment="Top" Height="28" Width="93"/>
+        <TextBox x:Name="tboxGPJEmname" HorizontalAlignment="Left" Margin="16,179,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="178"/>
+        <Label x:Name="lblTypeInGpjEmname" FontSize="9.5" Content="Type in GPJ Employee Name..." HorizontalAlignment="Left" Margin="37,154,0,0" VerticalAlignment="Top" Height="26" Width="136"/>
+
+    </Grid>
+</Window>

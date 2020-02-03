@@ -32,7 +32,7 @@
                     <TextBlock Height="33" FontSize="11" HorizontalAlignment="Center" Width="50"><Run Text="Usage"/><LineBreak/><Run Text="Reports"/></TextBlock>
                 </StackPanel>
             </Button>
-            <Button x:Name="btnAnnoEmailTeamMtn" Width="52" Height="74" Margin="0, 0, 0, 22">
+            <Button x:Name="btnAnnoEmailTeamMtn" Width="52" Height="74" Margin="0, 0, 0, 22" Click="btnAnnoEmailTeamMtn_Click">
                 <StackPanel HorizontalAlignment="Center">
                     <Image Source="Pictures/email.png" Height="30" />
                     <TextBlock Height="33" FontSize="11" HorizontalAlignment="Center" Width="50"><Run Text="Email"/><LineBreak/><Run Text="Team Edit"/></TextBlock>

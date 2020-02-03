@@ -45,5 +45,12 @@ namespace Annotator2020
             frm.Show();
             this.Close();
         }
+
+        private void btnAnnoEmailTeamMtn_Click(object sender, RoutedEventArgs e)
+        {
+            formEmailNotifyTeam frm = new formEmailNotifyTeam();
+            frm.Show();
+            this.Close();
+        }
     }
 }
